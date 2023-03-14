@@ -1,5 +1,4 @@
 import {
-  AfterViewInit,
   Component,
   EventEmitter,
   forwardRef,
@@ -36,7 +35,7 @@ import { take, takeUntil } from "rxjs/operators";
   ],
 })
 export class MultiSelectComponent
-  implements OnInit, OnChanges, OnDestroy, ControlValueAccessor {
+  implements OnInit, OnChanges, OnDestroy {
   title = "app-material3";
   @Input() options: any[];
   @Input() label: string;
@@ -93,33 +92,6 @@ export class MultiSelectComponent
   writeValue(value: any): void {
     this.myValue = value;
   }
-  registerOnChange(fn: any): void {
-    this.onChange = fn;
-  }
-  registerOnTouched(fn: any): void {
-    this.onTouched = fn;
-  }
-  setDisabledState?(isDisabled: boolean): void {
-    throw new Error("Method not implemented.");
-  }
-
-  /**
-   * Write code on Method
-   *
-   * method logical code
-   */
-
-  /**
-   * Write code on Method
-   *
-   * method logical code
-   */
-
-  /**
-   * Write code on Method
-   *
-   * method logical code
-   */
   ngOnDestroy() {
     this._onDestroy.next();
     this._onDestroy.complete();

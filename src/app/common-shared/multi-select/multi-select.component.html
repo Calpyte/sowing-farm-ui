@@ -30,7 +30,7 @@
         <div *ngIf="website?.name">{{ website?.name }}</div>
       </mat-option>
     </mat-select>
-    <mat-error *ngIf="isSubmit || basic.multiSelect.errors"
+    <mat-error *ngIf="isSubmit || basic?.multiSelect?.errors"
       >{{ label | titlecase }} is required</mat-error
     >
   </mat-form-field>
