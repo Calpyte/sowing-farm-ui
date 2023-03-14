@@ -1,7 +1,7 @@
 .card {
   border-radius: 15px;
   margin: 6px;
-  padding: 0px;
+  padding : 0;
   transition: 0.3s;
   border: none;
 }
@@ -12,7 +12,7 @@ mat-cell {
 }
 
 mat-table {
-    padding:0px;
+    padding:0;
 }
 
 .mat-form-field {
@@ -24,12 +24,12 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
  border-bottom: none;
 }
 
-.mat-header-generic{
+.mat-header-generic {
     color:black;
 }
 
 th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 [hidden] {
