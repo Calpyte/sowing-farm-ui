@@ -27,9 +27,12 @@
             <div class="row">
               <input
                 type="text"
-                class="form-control"
-                formcontrolname="{{ searchColumns[i]?.name }}"
+                nbInput
+                fullWidth
                 id="{{ searchColumns[i]?.name }}"
+                formcontrolname="{{ searchColumns[i]?.name }}"
+                shape="rectangle"
+                placeholder="Rectangle border"
                 (keyup)="search($event)"
                 autocomplete="off"
               />

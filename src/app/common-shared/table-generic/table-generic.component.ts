@@ -20,7 +20,7 @@ import { ResponseModalService } from "../response-modal/response-modal.service";
 
 
 @Component({
-  selector: "table-generic",
+  selector: "app-table-generic",
   templateUrl: "./table-generic.component.html",
   styleUrls: ["./table-generic.component.scss"],
 
