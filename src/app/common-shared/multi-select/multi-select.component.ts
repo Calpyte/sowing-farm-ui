@@ -4,6 +4,7 @@ import {
   EventEmitter,
   forwardRef,
   Input,
+  OnChanges,
   OnDestroy,
   OnInit,
   Output,
@@ -35,7 +36,7 @@ import { take, takeUntil } from "rxjs/operators";
   ],
 })
 export class MultiSelectComponent
-  implements OnInit, OnDestroy, ControlValueAccessor {
+  implements OnInit, OnChanges, OnDestroy, ControlValueAccessor {
   title = "app-material3";
   @Input() options: any[];
   @Input() label: string;
