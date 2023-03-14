@@ -150,10 +150,7 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.html"
-            ]
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
           }
         }
       }
@@ -175,11 +172,11 @@
   },
   "schematics": {
     "@schematics/angular:component": {
-      "prefix": "ngx",
+      "prefix": "app",
       "style": "scss"
     },
     "@schematics/angular:directive": {
-      "prefix": "ngx"
+      "prefix": "app"
     }
   },
   "cli": {
